@@ -1,12 +1,13 @@
 <html>
-  <head> 
+ <head> 
     <style>
 	path{
     fill:none;
     stroke:black;
     pointer-events:all;
 }
-    #d1:hover {  fill: red;}
+    #d1:hover {  fill: green;}
+    #d2:hover {  fill: blue;}
     #d2:hover {  fill: blue;}
     #d3:hover {  fill: red;}
     #d4:hover {  fill: blue;}
@@ -18,7 +19,13 @@
     #d10:hover {  fill: blue;}
     #d11:hover {  fill: red;}
     #d12:hover {  fill: blue;}
+	div{
+	width:300px;
+	height:100px;
+	border: 1px solid black;
+	}
     </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>    
   <body>
 <svg width="300" height="300" viewBox="0 0 666 666" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,7 +43,107 @@
 <path id="d3" d="M617.056 169C645.844 218.862 661 275.424 661 333L497 333C497 304.212 489.422 275.931 475.028 251L617.056 169Z" stroke="black" stroke-width="3"/>
 <path id="d4" d="M661 333C661 390.576 645.844 447.138 617.056 497L475.028 415C489.422 390.069 497 361.788 497 333H661Z" stroke="black" stroke-width="3"/>
 </g>
-</svg>
+</svg><br/><br/><br/>
+<div><p  id='replace-me'>Start text</p>
+</div>
+    <script>
+	const d1 = document.querySelector('#d1');
+	const d2 = document.querySelector('#d2');
+	const d3 = document.querySelector('#d3');
+	const d4 = document.querySelector('#d4');
+	const d5 = document.querySelector('#d5');
+	const d6 = document.querySelector('#d6');
+	const d7 = document.querySelector('#d7');
+	const d8 = document.querySelector('#d8');
+	const d9 = document.querySelector('#d9');
+	const d10 = document.querySelector('#d10');
+	const d11 = document.querySelector('#d11');
+	const d12 = document.querySelector('#d12');
+d1.addEventListener('mouseenter', () => {
+	document.getElementById('replace-me').innerText = "You in sector 1"
+});
+
+d1.addEventListener('mouseout', () => {
+	document.getElementById('replace-me').innerText = "Start text"
+});
+d2.addEventListener('mouseenter', () => {
+	document.getElementById('replace-me').innerText = "You in sector 2"
+});
+
+d2.addEventListener('mouseout', () => {
+	document.getElementById('replace-me').innerText = "Start text"
+});
+d3.addEventListener('mouseenter', () => {
+	document.getElementById('replace-me').innerText = "You in sector 3"
+});
+
+d3.addEventListener('mouseout', () => {
+	document.getElementById('replace-me').innerText = "Start text"
+});
+d4.addEventListener('mouseenter', () => {
+	document.getElementById('replace-me').innerText = "You in sector 4"
+});
+
+d4.addEventListener('mouseout', () => {
+	document.getElementById('replace-me').innerText = "Start text"
+});
+d5.addEventListener('mouseenter', () => {
+	document.getElementById('replace-me').innerText = "You in sector 5"
+});
+
+d5.addEventListener('mouseout', () => {
+	document.getElementById('replace-me').innerText = "Start text"
+});
+d6.addEventListener('mouseenter', () => {
+	document.getElementById('replace-me').innerText = "You in sector 6"
+});
+
+d6.addEventListener('mouseout', () => {
+	document.getElementById('replace-me').innerText = "Start text"
+});
+d7.addEventListener('mouseenter', () => {
+	document.getElementById('replace-me').innerText = "You in sector 7"
+});
+
+d7.addEventListener('mouseout', () => {
+	document.getElementById('replace-me').innerText = "Start text"
+});
+d8.addEventListener('mouseenter', () => {
+	document.getElementById('replace-me').innerText = "You in sector 8"
+});
+
+d8.addEventListener('mouseout', () => {
+	document.getElementById('replace-me').innerText = "Start text"
+});
+d9.addEventListener('mouseenter', () => {
+	document.getElementById('replace-me').innerText = "You in sector 9"
+});
+
+d9.addEventListener('mouseout', () => {
+	document.getElementById('replace-me').innerText = "Start text"
+});
+d10.addEventListener('mouseenter', () => {
+	document.getElementById('replace-me').innerText = "You in sector 10"
+});
+
+d10.addEventListener('mouseout', () => {
+	document.getElementById('replace-me').innerText = "Start text"
+});
+d11.addEventListener('mouseenter', () => {
+	document.getElementById('replace-me').innerText = "You in sector 11"
+});
+
+d11.addEventListener('mouseout', () => {
+	document.getElementById('replace-me').innerText = "Start text"
+});
+d12.addEventListener('mouseenter', () => {
+	document.getElementById('replace-me').innerText = "You in sector 12"
+});
+
+d12.addEventListener('mouseout', () => {
+	document.getElementById('replace-me').innerText = "Start text"
+});
+    </script>
 </body>
 </html>
 
